@@ -40,13 +40,40 @@
 		  .YC-Input-Search{
 				width: 90px
 			}
-		}	
+		}
+		
+		.media.media-video .thumb{
+		    position:relative;
+		    width:250px;
+		    text-decoration:none;
+		}
+		.media.media-video .thumb img{
+		    width:100%;
+		}
+		.media.media-video .thumb .duration{
+		    position:absolute;
+		    display:block;
+		    bottom:5px;
+		    right:5px;
+		    color:#fff;
+		    background-color:#000;
+		    font-size:0.8rem;
+		    padding:4px;
+		    -webkit-transition:0.2s linear opacity;
+		}
+		.media.media-video .thumb:hover .duration{
+		    opacity:0.3;
+		}
+		.YC-text-card:hover{
+			color:#373737 !important;
+		}
+		.mySlides {display:none;}
     </style>
 </head>
-<body style="background-color: black">
+<body style="background-color: #e5e5e5">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
 	<div class="container">
-		<h1 class=""><span style="color: white;font-size: 30px">You</span><b style="color: #00baa8;font-size: 30px">CUM</b></h1>
+		<h1 class=""><span style="color: white;font-size: 30px">You</span><b style="color: #00baa8;font-size: 30px">CUM</b><span style="color: white;font-size: 25px">.es</span></h1>
 		<form class="form-inline my-2 my-lg-0">
 			<input class="form-control mr-sm-2 YC-Input-Search" type="search" placeholder="Buscar" aria-label="Search" style="margin: 3px;">
 			<button class="btn my-2 my-sm-0" type="submit" style="color: white;background-color: #00baa8;margin: 3px;"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -99,12 +126,13 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 	$(document).ready(function () {
-  	if ($(window).width() < 1024) {
+  		if ($(window).width() < 1024) {
 		   $(".YC-head2-list").removeClass("container")
 		} else {
 		    $(".YC-head2-list").addClass("container")
 		}
-		//your code here
+
+		
 	});
 	
 	</script>

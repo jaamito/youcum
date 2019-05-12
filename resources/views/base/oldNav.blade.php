@@ -187,3 +187,14 @@
 			</div>
 		</div>
 	</nav>-->
+
+	function translate($text,$from,$to){
+      $frase = urlencode($text);
+      $obtener = file_get_contents('http://translate.google.es/translate_a/t?client=t&sl='.$from.'&tl='.$to.'&hl='.$from.'&sc=2&ie=UTF-8&oe=UTF-8&oc=1&otf=2&ssel=0&tsel=0&q='.$frase);
+      $obtener = explode('"',$obtener,3);
+      return $obtener[1];
+  }
+  echo translate( date('l, d M Y'),'en','es'); // esto muestra Viernes, 06 de diciembre 2013
+  echo translate( 'Texto a traducir','es','en'); // esto muestra Text to translate
+  echo translate( 'Texto a traducir','es','ru'); // esto muestra Перевод текста
+  echo translate( 'Texto a traducir','es','zh-TW'); // esto muestra 翻譯文本
