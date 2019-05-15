@@ -1,0 +1,56 @@
+@media (min-width: 768px) {
+	.navbar-brand.abs{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }	    
+}
+.containerYC {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .YC-Input-Search{
+		width: 200px
+	}
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .YC-Input-Search{
+		width: 200px
+	}
+}
+
+.media.media-video .thumb{
+    position:relative;
+    width:250px;
+    text-decoration:none;
+}
+.media.media-video .thumb img{
+    width:100%;
+}
+.media.media-video .thumb .duration{
+    position:absolute;
+    display:block;
+    bottom:5px;
+    right:5px;
+    color:#fff;
+    background-color:#000;
+    font-size:0.8rem;
+    padding:4px;
+    -webkit-transition:0.2s linear opacity;
+}
+.media.media-video .thumb:hover .duration{
+    opacity:0.3;
+}
+.YC-text-card:hover{
+	color:#373737 !important;
+}
+.mySlides {display:none;}

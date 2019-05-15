@@ -29,7 +29,7 @@
 		}
 		@media (min-width: 481px) and (max-width: 767px) {
 		  .YC-Input-Search{
-				width: 110px
+				width: 200px
 			}
 		}
 		/* 
@@ -38,7 +38,7 @@
 		*/
 		@media (min-width: 320px) and (max-width: 480px) {
 		  .YC-Input-Search{
-				width: 90px
+				width: 200px
 			}
 		}
 		
@@ -67,19 +67,19 @@
 		.YC-text-card:hover{
 			color:#373737 !important;
 		}
-		.mySlides {display:none;}
+		
     </style>
 </head>
 <body style="background-color: #e5e5e5">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
 	<div class="container">
 		<h1 class=""><span style="color: white;font-size: 30px">You</span><b style="color: #00baa8;font-size: 30px">CUM</b><span style="color: white;font-size: 25px">.es</span></h1>
+		<button class="navbar-toggler my-2 my-sm-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin: 3px;">
+				<span class="navbar-toggler-icon"></span>
+			</button >
 		<form class="form-inline my-2 my-lg-0">
 			<input class="form-control mr-sm-2 YC-Input-Search" type="search" placeholder="Buscar" aria-label="Search" style="margin: 3px;">
 			<button class="btn my-2 my-sm-0" type="submit" style="color: white;background-color: #00baa8;margin: 3px;"><i class="fa fa-search" aria-hidden="true"></i></button>
-			<button class="navbar-toggler my-2 my-sm-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin: 3px;">
-				<span class="navbar-toggler-icon"></span>
-			</button >
 		</form>
 	</div>
 </nav>
@@ -126,14 +126,29 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 	$(document).ready(function () {
+  		//Reconocer pantalla
   		if ($(window).width() < 1024) {
 		   $(".YC-head2-list").removeClass("container")
 		} else {
 		    $(".YC-head2-list").addClass("container")
 		}
 
-		
-	});
+		$("#div-1").hover(function(){
+			//var img = 1;
+			var i = 0;
+			var interval = setInterval(function() {
+				if(i == 8){i=0}
+				if(i != 8) {
+					i++;
+					console.log("posicion"+i)
+				}
+			}, 500);
+			$(this).data("interval", interval)
+			}, function(){
+				clearInterval($(this).data("interval"))
+				console.log("cancelo")
+			})	
+		});
 	
 	</script>
 </html>
