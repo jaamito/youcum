@@ -3,72 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>YouCum</title>
     <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style type="text/css">
-    	@media (min-width: 768px) {
-			.navbar-brand.abs{
-		        position: absolute;
-		        width: 100%;
-		        left: 0;
-		        text-align: center;
-		    }	    
-		}
-		.containerYC {
-		    width: 100%;
-		    padding-right: 15px;
-		    padding-left: 15px;
-		    margin-right: auto;
-		    margin-left: auto;
-		}
-		@media (min-width: 481px) and (max-width: 767px) {
-		  .YC-Input-Search{
-				width: 200px
-			}
-		}
-		/* 
-		  ##Device = Most of the Smartphones Mobiles (Portrait)
-		  ##Screen = B/w 320px to 479px
-		*/
-		@media (min-width: 320px) and (max-width: 480px) {
-		  .YC-Input-Search{
-				width: 200px
-			}
-		}
-		
-		.media.media-video .thumb{
-		    position:relative;
-		    width:250px;
-		    text-decoration:none;
-		}
-		.media.media-video .thumb img{
-		    width:100%;
-		}
-		.media.media-video .thumb .duration{
-		    position:absolute;
-		    display:block;
-		    bottom:5px;
-		    right:5px;
-		    color:#fff;
-		    background-color:#000;
-		    font-size:0.8rem;
-		    padding:4px;
-		    -webkit-transition:0.2s linear opacity;
-		}
-		.media.media-video .thumb:hover .duration{
-		    opacity:0.3;
-		}
-		.YC-text-card:hover{
-			color:#373737 !important;
-		}
-		
-    </style>
+    <!--Bootstrap-->
+    <link href="{{ asset('css/bootstrap-4.css') }}" rel="stylesheet">
+    <!--CSS Head-->
+    <link href="{{ asset('css/HeadCss/head.css') }}" rel="stylesheet">
 </head>
 <body style="background-color: #e5e5e5">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
@@ -103,52 +46,38 @@
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style='color: #00baa8'>
 					CATEGORIAS
 				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">					
 					<a class="dropdown-item" href="#" style='color: #00baa8'>Action</a>
 					<a class="dropdown-item" href="#" style='color: #00baa8'>Another action</a>
-					<div class="dropdown-divider"></div>
 					<a class="dropdown-item" href="#" style='color: #00baa8'>Something else here</a>
 				</div>
 			</li>
 		</ul>
 	</div>
 </nav>
-    <div class='container'>
-	    
-    	@yield('content')
+    <div  style='margin-left: 100px !important;margin-right: 100px'>
+    	<br>
+	    <div class="row">
+		  <div class="col-2">
+		    <div class="list-group" id="list-tab" role="tablist">
+		    	<a class="list-group-item" active style="background-color:#1a1a1a ;color:#00baa8">Categorias</a>
+		    	
+		    	@foreach($arrCategorias as $categoria)
+	        		<a class="list-group-item list-group-item-action" style="background-color: #343a40;color:white;cursor: pointer;">{{$categoria["category"]}}</a>
+    			@endforeach
+		    </div>
+		  </div>
+		  <div class="col-10">
+		    @yield('content')
+		  </div>
+		</div>
     </div>
 </div>
     </div>
 </body>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script type="text/javascript">
-	$(document).ready(function () {
-  		//Reconocer pantalla
-  		if ($(window).width() < 1024) {
-		   $(".YC-head2-list").removeClass("container")
-		} else {
-		    $(".YC-head2-list").addClass("container")
-		}
-
-		$("#div-1").hover(function(){
-			//var img = 1;
-			var i = 0;
-			var interval = setInterval(function() {
-				if(i == 8){i=0}
-				if(i != 8) {
-					i++;
-					console.log("posicion"+i)
-				}
-			}, 500);
-			$(this).data("interval", interval)
-			}, function(){
-				clearInterval($(this).data("interval"))
-				console.log("cancelo")
-			})	
-		});
 	
-	</script>
+	<script src="{{asset('js/jquery-3.3.1.js')}}"></script>
+	<script src="{{asset('js/bootstrap-4.3.1.js')}}"></script>
+	<script src="{{asset('js/HeadJs/HeadJs.js')}}"></script>
+	
 </html>
