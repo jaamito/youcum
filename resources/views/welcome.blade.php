@@ -20,8 +20,19 @@
 			    </div>
             
                 <div class="card-body" style="padding: 3px !important;height: 100%">
-                	<p class="card-text YC-text-card" style="color: #00baa8;cursor: pointer;font-size: 15px"><b>{{$vid["title"]}}</b></p>
-                	{{$vid["views"]}}     <i class="fa fa-thumbs-up" aria-hidden="true" style='color: green'></i> {{number_format($vid["rating"],0)}}%<br>
+                	<p class="card-text YC-text-card" style="color: #00baa8;cursor: pointer;font-size: 15px"><b>{{$vid["title"]}}</b></p>                	
+                	@if( $vid["views"] < 1000)
+						{{$vid["views"]}}
+					@elseif( $vid["views"] < 1000000) 
+					   	{{$viewsVid = number_format($vid["views"]/1000,0).'K'}}
+					@elseif ($vid["views"] < 1000000000) 
+					    {{$viewsVid = number_format($vid["views"]/ 1000000, 0).'M'}}
+					@else {
+					    {{$viewsVid = number_format($vid["views"]/ 1000000000, 0).'B'}}
+					@endif
+
+					
+					<i class="fa fa-thumbs-up" aria-hidden="true" style='color: green'></i> {{number_format($vid["rating"],0)}}%<br>
                 	@php
 						$i = 0
 					@endphp

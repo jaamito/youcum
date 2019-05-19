@@ -33,41 +33,29 @@
 				<a class="nav-link" href="#" style='color: #00baa8'>INICIO</a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="#" style='color: #00baa8'>FOTOS</a>
+				<a class="nav-link" href="#" style='color: #00baa8'>DESTACADOS</a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="#" style='color: #00baa8'>VIDEOS RECOMENDADOS</a>
+				<a class="nav-link" href="#" style='color: #00baa8'>NOVEDADES</a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="#" style='color: #00baa8'>ULTIMOS VIDEOS</a>
-			</li>
-			
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style='color: #00baa8'>
-					CATEGORIAS
-				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">					
-					<a class="dropdown-item" href="#" style='color: #00baa8'>Action</a>
-					<a class="dropdown-item" href="#" style='color: #00baa8'>Another action</a>
-					<a class="dropdown-item" href="#" style='color: #00baa8'>Something else here</a>
-				</div>
+				<a class="nav-link" href="#" style='color: #00baa8'>CATEGORIAS</a>
 			</li>
 		</ul>
 	</div>
 </nav>
-    <div  style='margin-left: 100px !important;margin-right: 100px'>
+    <div  style='margin-left: 300px !important;margin-right: 300px'>
     	<br>
 	    <div class="row">
-		  <div class="col-2">
+		  <!--<div class="col-2">
 		    <div class="list-group" id="list-tab" role="tablist">
 		    	<a class="list-group-item" active style="background-color:#1a1a1a ;color:#00baa8">Categorias</a>
-		    	
 		    	@foreach($arrCategorias as $categoria)
 	        		<a class="list-group-item list-group-item-action" style="background-color: #343a40;color:white;cursor: pointer;">{{$categoria["category"]}}</a>
     			@endforeach
 		    </div>
-		  </div>
-		  <div class="col-10">
+		  </div>-->
+		  <div class="col-12">
 		    @yield('content')
 		  </div>
 		</div>
