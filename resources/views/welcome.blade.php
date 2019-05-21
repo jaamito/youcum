@@ -2,15 +2,25 @@
 @section('content')
 <div class="alert" style="background-color: #1a1a1a;font-size: 20px;color: white">
 	Últimos vídeos porno amateur y caseros añadidos 
-	<span style="position: absolute;right: 0;margin-right: 3px">
+	<!--<span style="position: absolute;right: 0;margin-right: 3px">
 		Ordenar por: 
 		<div class="btn yc-btn-head-vid yc-btn-head-active" style='background-color: #00baa8'>Novedades</div>
 		<div class="btn yc-btn-head-vid" style='background-color: #343a40'>Destacados</div>
-	</span>
+	</span>-->
 </div>
 	<div class="row">
+		@php
+			$p = 1
+		@endphp
         @foreach($arrVid as $vid)
-        <div class="col-md-3" style="margin-bottom: 10px">
+        	@if($p = 1)
+        		<div class="col-md-2" style="margin-bottom: 10px">
+        	@else
+        		<div class="col-md-2" style="margin-bottom: 10px">
+        	@endif
+        	@php
+				$p = 2
+			@endphp
             <div class="card" style='height: 100%'>
                 <div class="media media-video">
 			        <a href="#" class="media-lef thumb" style="width: 100%">
@@ -20,7 +30,7 @@
 			    </div>
             
                 <div class="card-body" style="padding: 3px !important;height: 100%">
-                	<p class="card-text YC-text-card" style="color: #00baa8;cursor: pointer;font-size: 15px"><b>{{$vid["title"]}}</b></p>                	
+                	<p class="card-text YC-text-card" style="color: black;cursor: pointer;font-size: 15px"><b>{{$vid["title"]}}</b></p>                	
                 	@if( $vid["views"] < 1000)
 						{{$vid["views"]}}
 					@elseif( $vid["views"] < 1000000) 
