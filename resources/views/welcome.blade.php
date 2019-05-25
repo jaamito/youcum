@@ -9,19 +9,9 @@
 	</span>-->
 </div>
 	<div class="row">
-		@php
-			$p = 1
-		@endphp
         @foreach($arrVid as $vid)
-        	@if($p = 1)
-        		<div class="col-md-2" style="margin-bottom: 10px">
-        	@else
-        		<div class="col-md-2" style="margin-bottom: 10px">
-        	@endif
-        	@php
-				$p = 2
-			@endphp
-            <div class="card" style='height: 100%'>
+        <div class="col-md-2" style="margin-bottom: 10px">
+            <div class="card" style='height: 100%;margin:0px;border-top-left-radius: 4px;border-top-right-radius: 4px;'>
                 <div class="media media-video">
 			        <a href="#" class="media-lef thumb" style="width: 100%">
 			        	<img class="mySlides" data-src='{{$vid["default_thumb"]}}' data-srcold='{{$vid["thumb"]}}' src='{{$vid["default_thumb"]}}' style="width:100%;border-top-left-radius: 4px;border-top-right-radius: 4px;">

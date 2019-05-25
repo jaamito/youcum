@@ -97,24 +97,74 @@
 
         		</div>
         		<div class="col-md-8">
-					
-    				<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px;margin: 10px">
-		          	<img src="{{asset('img/categorias/anal.jpg')}}" style="width: 118px;height: 88px;margin: 10px">
-		          	<img src="{{asset('img/categorias/borrachas.jpg')}}" style="width: 118px;height: 88px;margin: 10px">
-		          	<img src="{{asset('img/categorias/calle.jpg')}}" style="width: 118px;height: 88px;margin: 10px">
-		          	<img src="{{asset('img/categorias/camOculta.jpg')}}" style="width: 118px;height: 88px;margin: 10px">
-		          	<img src="{{asset('img/categorias/casero.jpg')}}" style="width: 118px;height: 88px;margin: 10px">
-		          	<img src="{{asset('img/categorias/casting.jpg')}}" style="width: 118px;height: 88px;margin: 10px">
-		          	<img src="{{asset('img/categorias/Colegialas.jpg')}}" style="width: 118px;height: 88px;margin: 10px">
-		          	<img src="{{asset('img/categorias/conoPeludo.jpg')}}" style="width: 118px;height: 88px;margin: 10px">
-		          	<img src="{{asset('img/categorias/cornudo.jpg')}}" style="width: 118px;height: 88px;margin: 10px">
-		          	<img src="{{asset('img/categorias/corrida-en-la-cara.jpg')}}" style="width: 118px;height: 88px;margin: 10px">
-		          	<img src="{{asset('img/categorias/casting.jpg')}}" style="width: 118px;height: 88px;margin: 10px">
-		          	<img src="{{asset('img/categorias/Colegialas.jpg')}}" style="width: 118px;height: 88px;margin: 10px">
-		          	<img src="{{asset('img/categorias/conoPeludo.jpg')}}" style="width: 118px;height: 88px;margin: 10px">
-		          	<img src="{{asset('img/categorias/cornudo.jpg')}}" style="width: 118px;height: 88px;margin: 10px">
-		          	<img src="{{asset('img/categorias/plus.png')}}" style="width: 118px;height: 100px;margin: 10px;cursor: pointer;">
-		          	
+        			<div class="container">
+						<div class="row">
+							<div id="imagen" style="margin: 10px">
+								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+								<div>Amateur</div>
+							</div>
+							<div id="imagen" style="margin: 10px">
+								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+								<div>Amateur</div>
+							</div>
+							<div id="imagen" style="margin: 10px">
+								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+								<div>Amateur</div>
+							</div>
+							<div id="imagen" style="margin: 10px">
+								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+								<div>Amateur</div>
+							</div>
+							<div id="imagen" style="margin: 10px">
+								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+								<div>Amateur</div>
+							</div>
+							<div id="imagen" style="margin: 10px">
+								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+								<div>Amateur</div>
+							</div>
+							<div id="imagen" style="margin: 10px">
+								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+								<div>Amateur</div>
+							</div>
+							<div id="imagen" style="margin: 10px">
+								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+								<div>Amateur</div>
+							</div>
+							<div id="imagen" style="margin: 10px">
+								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+								<div>Amateur</div>
+							</div>
+							<div id="imagen" style="margin: 10px">
+								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+								<div>Amateur</div>
+							</div>
+							<div id="imagen" style="margin: 10px">
+								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+								<div>Amateur</div>
+							</div>
+							<div id="imagen" style="margin: 10px">
+								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+								<div>Amateur</div>
+							</div>
+							<div id="imagen" style="margin: 10px">
+								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+								<div>Amateur</div>
+							</div>
+							<div id="imagen" style="margin: 10px">
+								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+								<div>Amateur</div>
+							</div>
+							<div id="imagen" style="margin: 10px">
+								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+								<div>Amateur</div>
+							</div>
+							<div id="imagen" style="margin: 10px">
+								<img src="{asset('img/categorias/plus.gif')}}" style="width: 118px;height: 88px">
+								<div>Ver mas</div>
+							</div>
+	    				</div>
+	    			</div>
         		</div>
         	</div>
         </div>
@@ -133,12 +183,6 @@
 				<input class="form-control mr-sm-2 YC-Input-Search" type="search" placeholder="Buscar 8,151,701 videos..." aria-label="Search" style="margin: 3px;width:400px">
 				<button class="btn my-2 my-sm-0" type="submit" style="color: white;background-color: #00baa8;margin: 3px;"><i class="fa fa-search" aria-hidden="true"></i></button>
 			</form>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-user"></i> Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-key"></i> Logout</a>
-          </li>
         </ul>
       </div>
     </nav>

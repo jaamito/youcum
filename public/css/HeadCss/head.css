@@ -78,14 +78,19 @@
 
 
 
-#imagen
-{
-    /*position: relative;*/
-    bottom:24px;
+#imagen {
+    position:relative;
+    width: 118px;
+    height: 88px;
+}
+#imagen>div
+{   
+    width: 118px;
+    height: 20px;
+    position: relative;
+    bottom:20px;
     color:#fff;
     background-color:#000;
     opacity:0.5;
-    font-weight:bold;
-    width: 118px;
-    text-align:center;
+    text-align: center;
 }
