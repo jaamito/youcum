@@ -1,9 +1,9 @@
 @extends('base.head')
 @section('content')
 <div class="alert" style="background-color: #1a1a1a;font-size: 20px;color: white">
-	Últimos vídeos porno amateur y caseros añadidos 
+	Últimos vídeos porno amateur y caseros añadidos
 	<!--<span style="position: absolute;right: 0;margin-right: 3px">
-		Ordenar por: 
+		Ordenar por:
 		<div class="btn yc-btn-head-vid yc-btn-head-active" style='background-color: #00baa8'>Novedades</div>
 		<div class="btn yc-btn-head-vid" style='background-color: #343a40'>Destacados</div>
 	</span>-->
@@ -18,20 +18,20 @@
 			            <span class="duration">{{$vid["duration"]}}</span>
 			        </a>
 			    </div>
-            
+
                 <div class="card-body" style="padding: 3px !important;height: 100%">
-                	<p class="card-text YC-text-card" style="color: black;cursor: pointer;font-size: 15px"><b>{{$vid["title"]}}</b></p>                	
+                	<p class="card-text YC-text-card" style="color: black;cursor: pointer;font-size: 15px"><b>{{$vid["title"]}}</b></p>
                 	@if( $vid["views"] < 1000)
 						{{$vid["views"]}}
-					@elseif( $vid["views"] < 1000000) 
+					@elseif( $vid["views"] < 1000000)
 					   	{{$viewsVid = number_format($vid["views"]/1000,0).'K'}}
-					@elseif ($vid["views"] < 1000000000) 
+					@elseif ($vid["views"] < 1000000000)
 					    {{$viewsVid = number_format($vid["views"]/ 1000000, 0).'M'}}
 					@else {
 					    {{$viewsVid = number_format($vid["views"]/ 1000000000, 0).'B'}}
 					@endif
 
-					
+
 					<i class="fa fa-thumbs-up" aria-hidden="true" style='color: green'></i> {{number_format($vid["rating"],0)}}%<br>
                 	@php
 						$i = 0
@@ -67,7 +67,6 @@
 	      </a>
 	    </li>
 	  </ul>
-	</nav> 
-	           
+	</nav>
+	<div class='fondoTransparente classDisabled'></div>
 @endsection
-

@@ -33,4 +33,12 @@ $(document).ready(function () {
     e.preventDefault();
   });
 
+	$(document).on("click",".dropdown, .nav-item",function(){
+		$(".fondoTransparente").toggleClass("classDisabled classEnabled")
+		if($(this).hasClass("dropdown")){
+			$(".openClassDE").toggleClass("show")
+		}
+	})
+
+
 });

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-    
+
     <!--Bootstrap-->
     <link href="{{ asset('css/bootstrap-4.css') }}" rel="stylesheet">
     <!--CSS Head-->
@@ -31,7 +31,7 @@
 		</form>
 	</div>
 </nav>
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1a1a1a">  
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1a1a1a">
 	<div class="collapse navbar-collapse YC-head2-list container" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
@@ -69,113 +69,109 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav animate side-nav">
-          <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-video"></i> Caterogias <i class="fas fa-video shortmenu animate"></i>
-        </a>
-        <div class="dropdown-menu container" aria-labelledby="navbarDropdown" style='overflow: auto;width:900px;height: 450px'>
-        <div class="container">
-        	<div class="row">
-        		<div class="col-md-4">
-					  <br><span class="margin"><h4>Descubra Categorías</h4></span>
-					  <br><span class="margin"><i class="fa fa-heart fa-lg" aria-hidden="true"></i> Populares</span>
-					  <br><br><span class="margin"><i class="fa fa-sort-alpha-asc fa-lg" aria-hidden="true"></i> Alfabéticamente</span>
-					  <br><br><span class="margin"><i class="fa fa-sort-numeric-asc fa-lg" aria-hidden="true"></i> Número de vídeos</span>
-					  <hr>
-					  <span class="margin"><h4><i class="fa fa-search" aria-hidden="true"></i> En Tendencia</h4></span>
-					  <span class="badge badge-dark">Anime Hentai Milk Party</span>
-					  <span class="badge badge-dark">Fati Vazques</span>
-					  <span class="badge badge-dark">Ashley Massaro</span>
-					  <span class="badge badge-dark">Giricum</span>
-					  <span class="badge badge-dark">Bar Refaell</span>
-					  <span class="badge badge-dark">Jordi Katrina</span>
-					  <span class="badge badge-dark">Ashley massaro Nude Wwwe</span>
-					  <span class="badge badge-dark">Youtuber Espanola</span>
-					  
-
-
-        		</div>
-        		<div class="col-md-8">
-        			<div class="container">
-						<div class="row">
-							<div id="imagen" style="margin: 10px">
-								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
-								<div>Amateur</div>
-							</div>
-							<div id="imagen" style="margin: 10px">
-								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
-								<div>Amateur</div>
-							</div>
-							<div id="imagen" style="margin: 10px">
-								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
-								<div>Amateur</div>
-							</div>
-							<div id="imagen" style="margin: 10px">
-								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
-								<div>Amateur</div>
-							</div>
-							<div id="imagen" style="margin: 10px">
-								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
-								<div>Amateur</div>
-							</div>
-							<div id="imagen" style="margin: 10px">
-								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
-								<div>Amateur</div>
-							</div>
-							<div id="imagen" style="margin: 10px">
-								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
-								<div>Amateur</div>
-							</div>
-							<div id="imagen" style="margin: 10px">
-								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
-								<div>Amateur</div>
-							</div>
-							<div id="imagen" style="margin: 10px">
-								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
-								<div>Amateur</div>
-							</div>
-							<div id="imagen" style="margin: 10px">
-								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
-								<div>Amateur</div>
-							</div>
-							<div id="imagen" style="margin: 10px">
-								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
-								<div>Amateur</div>
-							</div>
-							<div id="imagen" style="margin: 10px">
-								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
-								<div>Amateur</div>
-							</div>
-							<div id="imagen" style="margin: 10px">
-								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
-								<div>Amateur</div>
-							</div>
-							<div id="imagen" style="margin: 10px">
-								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
-								<div>Amateur</div>
-							</div>
-							<div id="imagen" style="margin: 10px">
-								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
-								<div>Amateur</div>
-							</div>
-							<div id="imagen" style="margin: 10px">
-								<img src="{asset('img/categorias/plus.gif')}}" style="width: 118px;height: 88px">
-								<div>Ver mas</div>
-							</div>
-	    				</div>
-	    			</div>
-        		</div>
-        	</div>
-        </div>
-          
-        </div>
-      </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" title="Cart"><i class="fas fa-cart-plus"></i> Cart <i class="fas fa-cart-plus shortmenu animate"></i></a>
+        <ul class="navbar-nav animate side-nav" style="width:180px">
+          <li class="nav-item dropdown openClassDE" style="cursor:pointer">
+              <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-video"></i> Caterogias <i class="fas fa-video shortmenu animate"></i>
+              </a>
+            <div class="dropdown-menu container openClassDE " aria-labelledby="navbarDropdown" style='overflow: auto;width:900px;height: 450px'>
+            <div class="container">
+            	<div class="row">
+            		<div class="col-md-4">
+    					  <br><span class="margin"><h4>Descubra Categorías</h4></span>
+    					  <br><span class="margin"><i class="fa fa-heart fa-lg" aria-hidden="true"></i> Populares</span>
+    					  <br><br><span class="margin"><i class="fa fa-sort-alpha-asc fa-lg" aria-hidden="true"></i> Alfabéticamente</span>
+    					  <br><br><span class="margin"><i class="fa fa-sort-numeric-asc fa-lg" aria-hidden="true"></i> Número de vídeos</span>
+    					  <hr>
+    					  <span class="margin"><h4><i class="fa fa-search" aria-hidden="true"></i> En Tendencia</h4></span>
+    					  <span class="badge badge-dark">Anime Hentai Milk Party</span>
+    					  <span class="badge badge-dark">Fati Vazques</span>
+    					  <span class="badge badge-dark">Ashley Massaro</span>
+    					  <span class="badge badge-dark">Giricum</span>
+    					  <span class="badge badge-dark">Bar Refaell</span>
+    					  <span class="badge badge-dark">Jordi Katrina</span>
+    					  <span class="badge badge-dark">Ashley massaro Nude Wwwe</span>
+    					  <span class="badge badge-dark">Youtuber Espanola</span>
+            		</div>
+            		<div class="col-md-8">
+            			<div class="container">
+    						<div class="row">
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/amateur.jpg')}}" style="width: 118px;height: 88px">
+    								<div>Amateur</div>
+    							</div>
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/18.jpg')}}" style="width: 118px;height: 88px">
+    								<div>18 años</div>
+    							</div>
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/anal.jpg')}}" style="width: 118px;height: 88px">
+    								<div>Anal</div>
+    							</div>
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/bbww.jpg')}}" style="width: 118px;height: 88px">
+    								<div>BBWW</div>
+    							</div>
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/borrachas.jpg')}}" style="width: 118px;height: 88px">
+    								<div>Borrachas</div>
+    							</div>
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/calle.jpg')}}" style="width: 118px;height: 88px">
+    								<div>Calle</div>
+    							</div>
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/camOculta.jpg')}}" style="width: 118px;height: 88px">
+    								<div>Camara oculta</div>
+    							</div>
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/casero.jpg')}}" style="width: 118px;height: 88px">
+    								<div>Casero</div>
+    							</div>
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/colegialas.jpg')}}" style="width: 118px;height: 88px">
+    								<div>Colegialas</div>
+    							</div>
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/morenas.jpg')}}" style="width: 118px;height: 88px">
+    								<div>Morenas</div>
+    							</div>
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/incesto.jpg')}}" style="width: 118px;height: 88px">
+    								<div>Incesto</div>
+    							</div>
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/español.jpg')}}" style="width: 118px;height: 88px">
+    								<div>Casero Español</div>
+    							</div>
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/famosas.jpg')}}" style="width: 118px;height: 88px">
+    								<div>Famosas</div>
+    							</div>
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/Fiestas.jpg')}}" style="width: 118px;height: 88px">
+    								<div>Fiestas</div>
+    							</div>
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/madurtas.jpg')}}" style="width: 118px;height: 88px">
+    								<div>Maduras</div>
+    							</div>
+    							<div id="imagen" style="margin: 10px">
+    								<img src="{{asset('img/categorias/plus.gif')}}" style="width: 118px;height: 88px">
+    								<div>Ver mas</div>
+    							</div>
+    	    				</div>
+    	    			</div>
+            		</div>
+            	</div>
+            </div>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" title="Comment"><i class="fas fa-comment"></i> Comment <i class="fas fa-comment shortmenu animate"></i></a>
+          <li class="nav-item ">
+            <a class="nav-link " href="#" title="Cart"><i class="fas fa-cart-plus"></i> Cart <i class="fas fa-cart-plus shortmenu animate"></i></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#" title="Comment"><i class="fas fa-comment"></i> Comment <i class="fas fa-comment shortmenu animate"></i></a>
           </li>
         </ul>
         <ul class="navbar-nav ml-md-auto d-md-flex">
@@ -190,9 +186,10 @@
     	<br>
 	    <div class="row">
 		  <div class="col-0">
-		  	
+
 		  </div>
 		  <div class="col-12">
+
 		    @yield('content')
 		  </div>
 		</div>
@@ -214,5 +211,5 @@
 	<script src="{{asset('js/jquery-3.3.1.js')}}"></script>
 	<script src="{{asset('js/bootstrap-4.3.1.js')}}"></script>
 	<script src="{{asset('js/HeadJs/HeadJs.js')}}"></script>
-	
+
 </html>
